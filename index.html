@@ -10,14 +10,14 @@
     <button id="burger">Menu</button>
     <div id="root" aria-expanded="false"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script defer>
+
+    <script>
       const burger = document.getElementById('burger');
       const widget = document.getElementById('root');
 
       burger.addEventListener('click', () => {
         widget.classList.toggle('show');
       });
-
     </script>
   </body>
 </html>
