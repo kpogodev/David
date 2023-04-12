@@ -9,7 +9,7 @@ const View3 = () => {
       <h2>View 3</h2>
       <p>Tutaj dane z json placeholdera, które są pobierane w ViewContextProvider</p>
       {randomData.map((data) => (
-        <p>{data.title}</p>
+        <p key={data.id}>{data.title}</p>
       ))}
       <button onClick={handleClick}>Go Back</button>
     </div>
