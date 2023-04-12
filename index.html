@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <button id="burger">Menu</button>
+    <div id="root" aria-expanded="false"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script defer>
+      const burger = document.getElementById('burger');
+      const widget = document.getElementById('root');
+
+      burger.addEventListener('click', () => {
+        widget.classList.toggle('show');
+      });
+
+    </script>
+  </body>
+</html>
